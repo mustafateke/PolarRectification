@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PolarRectification - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\mustafa\LOCALS~1\Temp\RSP40.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/PolarRectification.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"H:\PolarRectification\PolarRectification.cpp"
+"H:\PolarRectification\ImageProperties.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mustafa\LOCALS~1\Temp\RSP40.tmp" 
+Creating temporary file "C:\DOCUME~1\mustafa\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/PolarRectification.pdb" /debug /machine:I386 /out:"Debug/PolarRectification.exe" /pdbtype:sept 
+.\Debug\PolarRectification.obj
+.\Debug\ImageProperties.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\mustafa\LOCALS~1\Temp\RSP41.tmp"
+<h3>Output Window</h3>
+Compiling...
+PolarRectification.cpp
+H:\PolarRectification\PolarRectification.cpp(127) : error C2065: 'findImageParams' : undeclared identifier
+H:\PolarRectification\PolarRectification.cpp(133) : error C2039: 'findImageParam' : is not a member of 'PolarRectification'
+        h:\polarrectification\polarrectification.h(20) : see declaration of 'PolarRectification'
+H:\PolarRectification\PolarRectification.cpp(180) : error C2065: 'distances' : undeclared identifier
+H:\PolarRectification\PolarRectification.cpp(180) : error C2109: subscript requires array or pointer type
+H:\PolarRectification\PolarRectification.cpp(185) : error C2143: syntax error : missing ')' before ';'
+H:\PolarRectification\PolarRectification.cpp(191) : error C2065: 'fromRadiantoDegree' : undeclared identifier
+ImageProperties.cpp
+h:\polarrectification\polarrectification.h(31) : error C2061: syntax error : identifier 'ImageProperties'
+h:\polarrectification\polarrectification.h(39) : error C2146: syntax error : missing ';' before identifier 'ImageProps'
+h:\polarrectification\polarrectification.h(39) : error C2501: 'ImageProperties' : missing storage-class or type specifiers
+h:\polarrectification\polarrectification.h(39) : error C2501: 'ImageProps' : missing storage-class or type specifiers
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+PolarRectification.exe - 10 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
